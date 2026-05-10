@@ -2,9 +2,9 @@
 
 
 URL="https://divar.ir"
-TRESHHOLD=200
+# TRESHHOLD=200
 
-for i in {1..$TRESHHOLD}
+for i in {1..200}
 do
   echo "===================================" >> output
   echo "attempt $i" >> output
