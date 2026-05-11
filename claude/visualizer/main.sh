@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 
-OUT="report.html"
+PATH="/home/amirmohammad/Git/rate-limit-checker/claude/visualizer/"
+OUT="$PATH/report.html"
 
 echo '<!DOCTYPE html><html><head><style>' > "$OUT"
 echo 'body{background:#111;color:#ccc;font-family:monospace;padding:20px;display:flex;flex-wrap:wrap;gap:16px;}' >> "$OUT"
