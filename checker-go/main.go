@@ -48,6 +48,7 @@ func makeRequest() {
 
 	fmt.Println(resp.Body)
 }
+
 func main(){
 	makeRequest()
 
