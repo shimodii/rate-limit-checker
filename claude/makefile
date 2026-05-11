@@ -3,3 +3,6 @@ clean:
 
 run:
 	@./main.sh
+
+out:
+	@./visualizer/main.sh ./log/*
