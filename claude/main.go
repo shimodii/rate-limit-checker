@@ -56,7 +56,7 @@ func makeRequest(workerID, taskNum int) Result {
 	req.Header.Set("Priority", "u=0")
 	req.Header.Set("TE", "trailers")
 
-	client := &http.Client{Timeout: 15 * time.Second}
+	client := &http.Client{Timeout: 5 * time.Second}
 	resp, err := client.Do(req)
 	if err != nil {
 		return Result{workerID: workerID, taskNum: taskNum, err: err, duration: time.Since(start)}
