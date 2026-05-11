@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-func main() {
+func makeRequest() {
 	url := "https://api.divar.ir/v8/postlist/w/search"
  
 	body := `{"city_ids":["1"],"pagination_data":{"@type":"type.googleapis.com/post_list.PaginationData","last_post_date":"2026-05-10T13:54:00.065731Z","page":10,"layer_page":10,"search_uid":"7425395b-2c81-45f0-86b6-663397c7ff4b","cumulative_widgets_count":241,"viewed_tokens":"","search_bookmark_info":{"search_hash":"3c08c51403d09b9ea300772577379267","bookmark_state":{},"alert_state":{}},"first_page_viewed_at":"2026-05-10T13:55:19.742595902Z"},"disable_recommendation":false,"map_state":{"camera_info":{"bbox":{}}},"search_data":{"form_data":{"data":{"category":{"str":{"value":"ROOT"}}}},"server_payload":{"@type":"type.googleapis.com/widgets.SearchData.ServerPayload","additional_form_data":{"data":{"sort":{"str":{"value":"sort_date"}}}}}}}`
@@ -47,6 +47,9 @@ func main() {
 	fmt.Printf("Status: %s\n", resp.Status)
 
 	fmt.Println(resp.Body)
- 
- 
+}
+func main(){
+	makeRequest()
+
+
 }
